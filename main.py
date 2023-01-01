@@ -1,8 +1,7 @@
-from flask import Flask
-app = Flask('app')
-
-@app.route('/')
-def hello_world():
-  return 'Hello, World!'
-
-app.run(host='0.0.0.0', port=8080)
+game_over = False
+if game_over:
+  print("bummer dude")
+else:
+  print("wanna go again?")
+  
+  

@@ -233,6 +233,18 @@ qa = ["flake8 (==3.8.3)", "mypy (==0.782)"]
 testing = ["docopt", "pytest (<6.0.0)"]
 
 [[package]]
+name = "pgzero"
+version = "1.2.1"
+description = "A zero-boilerplate 2D games framework"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+numpy = "*"
+pygame = ">=2.0,<3.0"
+
+[[package]]
 name = "pluggy"
 version = "1.0.0"
 description = "plugin and hook calling mechanisms for python"
@@ -249,6 +261,14 @@ name = "pyflakes"
 version = "2.5.0"
 description = "passive checker of Python programs"
 category = "dev"
+optional = false
+python-versions = ">=3.6"
+
+[[package]]
+name = "pygame"
+version = "2.1.2"
+description = "Python Game Development"
+category = "main"
 optional = false
 python-versions = ">=3.6"
 
@@ -478,7 +498,7 @@ testing = ["pytest (>=6)", "pytest-checkdocs (>=2.4)", "pytest-flake8", "flake8 
 [metadata]
 lock-version = "1.1"
 python-versions = ">=3.8.0,<3.9"
-content-hash = "f328c469a46d9cb95c79b10c69318f07ccca3f40cc6eb43ef51c87ad2ff1879b"
+content-hash = "190889f43f75447b98daa94a42e7b6091648ba74680279ca11830230b21f69c7"
 
 [metadata.files]
 aiohttp = []
@@ -502,8 +522,10 @@ multidict = []
 numpy = []
 packaging = []
 parso = []
+pgzero = []
 pluggy = []
 pyflakes = []
+pygame = []
 pyparsing = []
 python-lsp-jsonrpc = []
 pytoolconfig = []
